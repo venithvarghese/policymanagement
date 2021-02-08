@@ -1,0 +1,9 @@
+.Footersection {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(16, 116, 119);
+    color: white;
+    text-align: center;
+  }

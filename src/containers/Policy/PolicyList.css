@@ -1,0 +1,25 @@
+.PolicyList{
+    width: 30rem;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .PolicyList h2 {
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 1rem;
+  }
+  
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

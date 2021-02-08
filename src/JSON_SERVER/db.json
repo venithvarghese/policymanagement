@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "name": "Sheena Mary",
+      "username": "sgdsdj",
+      "password": "22436567",
+      "address": "Sheena cottage",
+      "street": "Perumpuzha PO",
+      "zipCode": "691504",
+      "country": "India",
+      "email": "dsklk@vdsn.com",
+      "gender": "female",
+      "maritalstatus": "married",
+      "phonenumber": "8547540901",
+      "dateofbirth": "2021-02-19",
+      "registrationDate": "2021-02-27",
+      "idtype": "passport",
+      "idnumber": "swwff",
+      "id": "R-903"
+    },
+    {
+      "name": "Sheena Mary",
+      "username": "sheena12",
+      "password": "1234535",
+      "address": "Sheena cottage",
+      "street": "Perumpuzha PO",
+      "zipCode": "691504",
+      "country": "India",
+      "email": "dnsbf@ddfjk.com",
+      "gender": "female",
+      "maritalstatus": "married",
+      "phonenumber": "8547540901",
+      "dateofbirth": "2021-02-21",
+      "registrationDate": "2021-02-21",
+      "idtype": "passport",
+      "idnumber": "dfwfg",
+      "id": "R-138"
+    }
+  ]
+}
