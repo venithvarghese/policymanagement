@@ -7,7 +7,7 @@ const Headersection =() =>(
     
     <div className= {styles.headersection}>
       
-        <img src ={logo} alt ="Policyworld"/>
+        
     </div>
 )
 

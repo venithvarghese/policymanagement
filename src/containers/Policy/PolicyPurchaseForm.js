@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import Card from '../UI/Card';
 import styles from './policyPurchaseForm.module.css';
 
@@ -30,15 +30,16 @@ const PolicyPurchaseForm = React.memo(props => {
   return (
     <section className={styles.PolicyPurchaseForm}>
       <Card>
+      <div className="col-lg-8 offset-lg-2">
         <form onSubmit={submitHandler}>
-         <div>
+         <div className="form-group">
           <label htmlFor="policytype">Policy Type</label>
-              <select id="policytype"   value={enteredPolicyType}
+              <select  className="form-control" id="policytype"   value={enteredPolicyType}
               onChange={event => {
                 console.log(event.target.value);
                 setEnteredPolicyType(event.target.value);
               }} >
-                 <option id=""  value=" ">please select</option>
+                 <option id=""  value=" "></option>
                   <option id="healthinsurance"  value=" healthinsurance">Health Insurance </option>
                   <option id="lifeinsurance"  value="lifeinsurance">Life   Insurance </option>
                   <option id="motorinsurance"  value="motorinsurance">Motor Insurance </option>
@@ -46,9 +47,9 @@ const PolicyPurchaseForm = React.memo(props => {
               </select>
           </div>
          
-          <div >
+          <div className="form-group">
             <label htmlFor="amount">Policy Amount</label>
-            <input
+            <input class="form-control"
               type="number"
               id="amount"
               value={enteredAmount}
@@ -58,23 +59,23 @@ const PolicyPurchaseForm = React.memo(props => {
               }}
             />
           </div>
-          <div>
+          <div className="form-group">
           <label htmlFor="activedate">Policy Amount</label> 
-          <input type="date"   placeholder="dd-mm-yyyy" value={enteredPolicyActiveDate}  min={sysdate("-")} max="2030-12-31"
+          <input  class="form-control" type="date"   placeholder="dd-mm-yyyy" value={enteredPolicyActiveDate}  min={sysdate("-")} max="2030-12-31"
           id ="activedate" onChange={event => {
             console.log(event.target.value);
             setEnteredPolicyActiveDate(event.target.value);
           }}/> 
           </div>
         
-          <div>
+          <div className="form-group">
           <label htmlFor="policyduration">Policy Duration</label>
-              <select id="policyduration"   value={enteredPolicyDuration}
+              <select className="form-control" id="policyduration"   value={enteredPolicyDuration}
               onChange={event => {
                 console.log(event.target.value);
                 setEnteredPolicyDuration(event.target.value);
               }} >
-                 <option id=" "  value=" "> please select </option>
+                 <option id=" "  value=" ">  </option>
                   <option id="5"  value=" 5">5 </option>
                   <option id="10"  value="10">10 </option>
                   <option id="15"  value="15">15</option>
@@ -82,10 +83,11 @@ const PolicyPurchaseForm = React.memo(props => {
                   <option id="30"  value="30">30 </option>
               </select>
           </div>
-          <div >
-            <button type="submit" disabled ={valid}>Buy Policy</button>
+          <div className="form-group">
+            <button className="btn btn-primary" type="submit" disabled ={valid}>Buy Policy</button>
           </div>
         </form>
+        </div>
       </Card>
     </section>
   );
