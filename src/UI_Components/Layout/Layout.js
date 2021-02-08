@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classes from './Layout.css';
+import styles from './layout.module.css';
 import Toolbar from '../Toolbar/Toolbar';
 import aux from '../../hoc/Auxiliary';
 
@@ -11,7 +11,7 @@ class Layout extends Component {
         return (
                 <aux>
                 <Toolbar/>
-                  <main className={classes.Content}>
+                  <main className={styles.Content}>
                     {this.props.children}
                 </main>
                 </aux>

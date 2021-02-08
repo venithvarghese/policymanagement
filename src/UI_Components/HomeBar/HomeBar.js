@@ -1,14 +1,14 @@
 import React from 'react';
 import MyLogo from  '../Logo/Logo';
-import classes from '../Toolbar/Toolbar.css';
+import styles from '../Toolbar/toolbar.module.css';
 import NavigationItems from '../NavigationItems/NavigationItems';
 
 const HomeBar = ( props ) => (
-    <header className={classes.Toolbar}>
-        <div className={classes.Logo}>
+    <header className={styles.Toolbar}>
+        <div className={styles.Logo}>
             <MyLogo />
         </div>
-        <nav className={classes.DesktopOnly}>
+        <nav className={styles.DesktopOnly}>
             <NavigationItems />
         </nav>
     </header>

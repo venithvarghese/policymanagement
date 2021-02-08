@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
+
 import Card from '../UI/Card';
-import classes from './PolicyPurchaseForm.css';
+import styles from './policyPurchaseForm.module.css';
 
 const PolicyPurchaseForm = React.memo(props => {
 
@@ -27,7 +28,7 @@ const PolicyPurchaseForm = React.memo(props => {
   };
 
   return (
-    <section className={classes.PolicyPurchaseForm}>
+    <section className={styles.PolicyPurchaseForm}>
       <Card>
         <form onSubmit={submitHandler}>
          <div>

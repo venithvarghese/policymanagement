@@ -1,10 +1,10 @@
 import React from 'react';
 
-import classes from './PolicyList.css';
+import styles from './policylist.module.css';
 
 const PolicyList = props => {
   return (
-    <section className={classes.ingredient}>
+    <section className={styles.ingredient}>
       <h2>My Policies</h2>
      <table >
          <th>Type </th><th>Amount</th><th>Activedate</th><th>duration</th>

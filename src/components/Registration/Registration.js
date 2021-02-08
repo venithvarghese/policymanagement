@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Button from '../../components/Button/Button';
 import Spinner from '../../UI_Components/Spinner/Spinner';
-import classes from './Registration.css';
+import styles from './registration.module.css';
 //import axios from '../../../axios-orders';
 import Input from '../../components/Input/Input';
 
@@ -336,7 +336,7 @@ class Registration extends Component {
             form = <Spinner />;
         }
         return (
-            <div className={classes.Registration}>
+            <div className={styles.Registration}>
                 <h4>Enter your Personal Data</h4>
                 {form}
             </div>

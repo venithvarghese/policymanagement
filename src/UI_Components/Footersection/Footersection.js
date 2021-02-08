@@ -1,8 +1,8 @@
 import React from 'react';
-import classes from './Footersection.css'
+import styles from './footersection.module.css'
 
 const Footersection =() =>(
-    <div className= {classes.Footersection}>
+    <div className= {styles.Footersection}>
         <h6> Thanks for Visiting this page</h6>
     </div>
 )
