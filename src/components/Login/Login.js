@@ -146,8 +146,8 @@ class Login extends Component {
                 <form onSubmit={this.submitHandler}>
                     {form}
                     <Button btnType="Success" >LOGIN</Button>
-                   
                 </form>
+                Not Registerd yet? Register Here...
                 <form onSubmit={this.registerHandler}>
                     
                     <Button btnType="Success">REGISTER</Button>

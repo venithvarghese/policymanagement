@@ -60,7 +60,7 @@ const PolicyPurchaseForm = React.memo(props => {
             />
           </div>
           <div className="form-group">
-          <label htmlFor="activedate">Policy Amount</label> 
+          <label htmlFor="activedate">Policy Start Date</label> 
           <input  class="form-control" type="date"   placeholder="dd-mm-yyyy" value={enteredPolicyActiveDate}  min={sysdate("-")} max="2030-12-31"
           id ="activedate" onChange={event => {
             console.log(event.target.value);

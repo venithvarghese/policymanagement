@@ -7,7 +7,7 @@ const PolicyList = props => {
     <section className={styles.ingredient}>
       <h2>My Policies</h2>
      <table >
-         <th>Type </th><th>Amount</th><th>Activedate</th><th>duration</th>
+         <th>Type </th><th>Amount</th><th>Policy Start Date</th><th>duration</th>
         {props.policydata.map(policylist => (
           <tr key={policylist.id} >
           
